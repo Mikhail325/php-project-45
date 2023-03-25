@@ -11,5 +11,7 @@
             "email": "miklsuhanov@gmail.com"
         }
     ],
+    "license": "MIT",
+    "bin": [ "bin/brain-games"],
     "require": {}
 }
