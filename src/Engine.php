@@ -8,7 +8,7 @@ use function BrainGames\Cli\greetTheUser;
 
 function startGame($startQuestion, $arrayQuestion)
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('%s', $startQuestion);
