@@ -7,7 +7,8 @@ use function BrainGames\src\Engin\startGame;
 function brainCalcStart()
 {
     $startQuestion = 'What is the result of the expression?';
-    for ($i = 0; $i < 3; $i++) {
+    $numberOfQuestions = 3;
+    for ($i = 0; $i < $numberOfQuestions; $i++) {
         $numberOne = rand(1, 30);
         $numberTwo = rand(1, 30);
         switch (rand(0, 2)) {
