@@ -11,10 +11,9 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\Cli\greetTheUser;
 
-line('Welcome to the Brain Game!');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
+$name = greetTheUser();
 line('Answer "yes" if the number is even, otherwise answer "no".');
 $i = 0;
 while($i < 3) {
