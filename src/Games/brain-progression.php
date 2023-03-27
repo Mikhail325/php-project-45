@@ -7,14 +7,13 @@ use function BrainGames\src\Engin\startGame;
 function brainStart()
 {
     $startQuestion = 'What number is missing in the progression?';
-
+    $arrayQuestion = [];
     $numberOfQuestions = 3;
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $startNumber = rand(1, 30);
         $lengthProgression = rand(5, 15);
         $stepProgression = rand(1, 10);
         $arrayProgression = [];
-        $arrayQuestion = [];
         for ($j = 0; $j < $lengthProgression; $j++) {
             $arrayProgression[] = $startNumber;
             $startNumber += $stepProgression;
