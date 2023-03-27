@@ -9,24 +9,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Cli\greetTheUser;
+use function BrainGames\src\games\brainEven\brainStart;;
 
-$name = greetTheUser();
-line('Answer "yes" if the number is even, otherwise answer "no".');
-$i = 0;
-while($i < 3) {
-    $number = rand();
-    $number % 2 === 0 ? $parity = 'yes' : $parity = 'no';
-    line("Question: %s ", $number);
-    $answer = prompt('Your answer');
-    $parity === $answer ? line('Correct!') : $i = 3;
-    $i++;
-}
-if($i === 3){
-    line("Congratulations, %s!", $name);
-} else {
-    line("'yes' is wrong answer ;(. Correct answer was 'no'.");
-    line("Let's try again, %s!", $name);
-}
+brainStart();

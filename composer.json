@@ -11,6 +11,7 @@
             "src/Games/brain-gcd.php",
             "src/Games/brain-progression.php",
             "src/Games/brain-prime.php",
+            "src/Games/brain-even.php",
             "src/Engine.php"
         ]
     },
