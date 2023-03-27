@@ -7,7 +7,7 @@ use function BrainGames\src\Engin\startGame;
 function brainStart()
 {
     $startQuestion = 'What number is missing in the progression?';
-    
+
     $numberOfQuestions = 3;
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $startNumber = rand(1, 30);
