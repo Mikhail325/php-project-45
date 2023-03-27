@@ -1,3 +1,5 @@
+brain-calc: #Запуск игры brain-calc
+	php bin/brain-calc
 brain-even: #Запуск игры brain-even
 	php bin/brain-even
 brain-games: #Запуск brain-games
