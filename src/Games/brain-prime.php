@@ -18,8 +18,8 @@ function brainStart()
 
 function isPrime($n)
 {
-    for($x=2; $x <= sqrt($n); $x++) {
-        if($n % $x == 0) {
+    for ($x = 2; $x <= sqrt($n); $x++) {
+        if ($n % $x == 0) {
             return false;
         }
     }

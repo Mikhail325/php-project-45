@@ -18,11 +18,12 @@ function brainStart()
     startGame($startQuestion, $arrayQuestion);
 }
 
-function gcd($numberOne, $numberTwo) {
-    while ($numberTwo != 0){
+function gcd($numberOne, $numberTwo)
+{
+    while ($numberTwo != 0) {
         $t = $numberOne % $numberTwo;
         $numberOne = $numberTwo;
         $numberTwo = $t;
-      }
-      return $numberOne;
+    }
+    return $numberOne;
 }
