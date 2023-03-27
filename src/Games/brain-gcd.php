@@ -12,7 +12,7 @@ function brainStart()
         $numberOne = rand(1, 30);
         $numberTwo = rand(1, 30);
         $parity = gcd($numberOne, $numberTwo);
-        $Question = "{$numberOne}, {$numberTwo}";
+        $Question = "{$numberOne} {$numberTwo}";
         $arrayQuestion[$Question] = (string) $parity;
     }
     startGame($startQuestion, $arrayQuestion);
