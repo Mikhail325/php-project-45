@@ -7,6 +7,7 @@ use function BrainGames\src\Engin\startGame;
 function brainStart()
 {
     $numberOfQuestions = 3;
+    $arrayQuestion = [];
     $startQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $number = rand(1, 30);

@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Cli\greetTheUser;
 
-function startGame($startQuestion, $arrayQuestion)
+function startGame(string $startQuestion, array $arrayQuestion)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
