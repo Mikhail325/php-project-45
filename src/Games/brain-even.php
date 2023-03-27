@@ -12,7 +12,7 @@ function brainStart()
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $number = rand(1, 30);
         $number % 2 == 0 ? $parity = 'yes' : $parity = 'no';
-        $arrayQuestion[$number] = (string) $parity;
+        $arrayQuestion[$number] = $parity;
     }
     startGame($startQuestion, $arrayQuestion);
 }
