@@ -1,15 +1,15 @@
-brain-prime: #Запуск игры brain-brain-prime
-	php bin/brain-prime
+brain-prime: #Запуск игры brain-prime
+	./bin/brain-prime
 brain-progression: #Запуск игры brain-brain-progression
-	php bin/brain-progression
+	./bin/brain-progression
 brain-gcd: #Запуск игры brain-gcd
-	php bin/brain-gcd
+	./bin/brain-gcd
 brain-calc: #Запуск игры brain-calc
-	php bin/brain-calc
+	./bin/brain-calc
 brain-even: #Запуск игры brain-even
-	php bin/brain-even
+	./bin/brain-even
 brain-games: #Запуск brain-games
-	php bin/brain-games
+	./bin/brain-games
 install: #Запуск composer install
 	composer install
 validate: #Запуск composer install
