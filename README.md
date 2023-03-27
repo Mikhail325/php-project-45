@@ -8,3 +8,5 @@ https://asciinema.org/a/HCXK59l8vtcC7yb9EeMDZtB6D
 https://asciinema.org/a/SLPMwKHWx6TKRLWYSwzPga9Qg
 Пример запуска игры make brain-progression с победой и поражением игрока
 https://asciinema.org/a/dHVHiMf4ogxJodtpyxgfc5XwG
+Пример запуска игры make brain-prime с победой и поражением игрока
+https://asciinema.org/a/cx3XWNGBb96wNrv6gNv4uOMiB

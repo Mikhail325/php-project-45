@@ -1,3 +1,5 @@
+brain-prime: #Запуск игры brain-brain-prime
+	php bin/brain-prime
 brain-progression: #Запуск игры brain-brain-progression
 	php bin/brain-progression
 brain-gcd: #Запуск игры brain-gcd
