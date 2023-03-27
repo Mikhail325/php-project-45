@@ -1,3 +1,5 @@
+brain-progression: #Запуск игры brain-brain-progression
+	php bin/brain-progression
 brain-gcd: #Запуск игры brain-gcd
 	php bin/brain-gcd
 brain-calc: #Запуск игры brain-calc

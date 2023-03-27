@@ -5,4 +5,6 @@ https://asciinema.org/a/JYMovo1BJIXMEl7r6n29QTmgj
 Пример запуска игры make brain-calc с победой и поражением игрока
 https://asciinema.org/a/HCXK59l8vtcC7yb9EeMDZtB6D
 Пример запуска игры make brain-gcd с победой и поражением игрока
-https://asciinema.org/a/HmRqwUvIqk70tfYi9CsZJBYdF
+https://asciinema.org/a/SLPMwKHWx6TKRLWYSwzPga9Qg
+Пример запуска игры make brain-progression с победой и поражением игрока
+https://asciinema.org/a/dHVHiMf4ogxJodtpyxgfc5XwG

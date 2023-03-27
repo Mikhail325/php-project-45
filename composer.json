@@ -9,6 +9,7 @@
             "src/Cli.php",
             "src/Games/brain-calc.php",
             "src/Games/brain-gcd.php",
+            "src/Games/brain-progression.php",
             "src/Engine.php"
         ]
     },
@@ -22,6 +23,7 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
+        "bin/brain-progression",
         "bin/brain-gcd",
         "bin/brain-calc"
     ],
