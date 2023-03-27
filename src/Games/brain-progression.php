@@ -14,6 +14,7 @@ function brainStart()
         $lengthProgression = rand(5, 15);
         $stepProgression = rand(1, 10);
         $arrayProgression = [];
+        $arrayQuestion = [];
         for ($j = 0; $j < $lengthProgression; $j++) {
             $arrayProgression[] = $startNumber;
             $startNumber += $stepProgression;
