@@ -4,7 +4,7 @@ namespace BrainGames\src\games\brainCalc;
 
 use function BrainGames\src\Engin\startGame;
 
-function brainCalcStart()
+function brainStart()
 {
     $startQuestion = 'What is the result of the expression?';
     $numberOfQuestions = 3;
