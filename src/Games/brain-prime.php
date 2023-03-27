@@ -10,9 +10,18 @@ function brainStart()
     $startQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no"';
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $number = rand(1, 30);
-        $parity = gmp_prob_prime($number);
-        $parity === 2 ? $parity = 'yes' : $parity = 'no';
+        isPrime($number) ? $parity = 'yes' : $parity = 'no';
         $arrayQuestion[$number] = (string) $parity;
     }
     startGame($startQuestion, $arrayQuestion);
+}
+
+function isPrime($n)
+{
+    for($x=2; $x <= sqrt($n); $x++) {
+        if($n % $x == 0) {
+            return false;
+        }
+    }
+    return true;
 }
