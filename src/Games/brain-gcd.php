@@ -11,10 +11,18 @@ function brainStart()
     for ($i = 0; $i < $numberOfQuestions; $i++) {
         $numberOne = rand(1, 30);
         $numberTwo = rand(1, 30);
-        $parity = gmp_gcd($numberOne, $numberTwo);
-        $parity = gmp_strval($parity);
+        $parity = gcd($numberOne, $numberTwo);
         $Question = "{$numberOne}, {$numberTwo}";
         $arrayQuestion[$Question] = (string) $parity;
     }
     startGame($startQuestion, $arrayQuestion);
+}
+
+function gcd($numberOne, $numberTwo) {
+    while ($numberTwo != 0){
+        $t = $numberOne % $numberTwo;
+        $numberOne = $numberTwo;
+        $numberTwo = $t;
+      }
+      return $numberOne;
 }
