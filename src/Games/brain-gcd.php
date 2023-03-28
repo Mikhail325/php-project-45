@@ -10,8 +10,8 @@ function brainStart()
     $arrayQuestion = [];
     $startQuestion = 'Find the greatest common divisor of given numbers.';
     for ($i = 0; $i < $numberOfQuestions; $i++) {
-        $numberOne = rand(1, 30);
-        $numberTwo = rand(1, 30);
+        $numberOne = rand(1, 99);
+        $numberTwo = rand(1, 99);
         $parity = gcd($numberOne, $numberTwo);
         $Question = "{$numberOne} {$numberTwo}";
         $arrayQuestion[$Question] = (string) $parity;

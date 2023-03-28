@@ -12,8 +12,8 @@ function brainStart()
     $mathematicalOperations = '';
     $parity = 0;
     for ($i = 0; $i < $numberOfQuestions; $i++) {
-        $numberOne = rand(1, 30);
-        $numberTwo = rand(1, 30);
+        $numberOne = rand(1, 99);
+        $numberTwo = rand(1, 99);
         switch (rand(0, 2)) {
             case 0:
                 $parity = $numberOne + $numberTwo;

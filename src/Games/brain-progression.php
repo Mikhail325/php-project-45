@@ -10,7 +10,7 @@ function brainStart()
     $arrayQuestion = [];
     $numberOfQuestions = 3;
     for ($i = 0; $i < $numberOfQuestions; $i++) {
-        $startNumber = rand(1, 30);
+        $startNumber = rand(1, 99);
         $lengthProgression = rand(5, 15);
         $stepProgression = rand(1, 10);
         $arrayProgression = [];
