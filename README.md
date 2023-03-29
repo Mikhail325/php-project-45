@@ -6,15 +6,10 @@
 ## Пример установки зависимостей make install, запуска игры make brain-even с победой и поражением игрока
 [![asciicast](https://asciinema.org/a/JYMovo1BJIXMEl7r6n29QTmgj.svg)](https://asciinema.org/a/JYMovo1BJIXMEl7r6n29QTmgj)
 ## Пример запуска игры make brain-calc с победой и поражением игрока
-[![Actions Status][def2]][def2]
+[![asciicast](https://asciinema.org/a/HCXK59l8vtcC7yb9EeMDZtB6D.svg)](https://asciinema.org/a/HCXK59l8vtcC7yb9EeMDZtB6D)
 ## Пример запуска игры make brain-gcd с победой и поражением игрока
-[![Actions Status][def3]][def3]
+[![asciicast](https://asciinema.org/a/SLPMwKHWx6TKRLWYSwzPga9Qg.svg)](https://asciinema.org/a/SLPMwKHWx6TKRLWYSwzPga9Qg)
 ## Пример запуска игры make brain-progression с победой и поражением игрока
-[![Actions Status][def4]][def4]
+[![asciicast](https://asciinema.org/a/dHVHiMf4ogxJodtpyxgfc5XwG.svg)](https://asciinema.org/a/dHVHiMf4ogxJodtpyxgfc5XwG)
 ## Пример запуска игры make brain-prime с победой и поражением игрока
-[![Actions Status][def5]][def5]
-
-[def2]: https://asciinema.org/a/HCXK59l8vtcC7yb9EeMDZtB6D
-[def3]: https://asciinema.org/a/SLPMwKHWx6TKRLWYSwzPga9Qg
-[def4]: https://asciinema.org/a/dHVHiMf4ogxJodtpyxgfc5XwG
-[def5]: https://asciinema.org/a/cx3XWNGBb96wNrv6gNv4uOMiB
+[![asciicast](https://asciinema.org/a/cx3XWNGBb96wNrv6gNv4uOMiB.svg)](https://asciinema.org/a/cx3XWNGBb96wNrv6gNv4uOMiB)
