@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\src\games\brainGcd;
+namespace BrainGames\Gcd;
 
-use function BrainGames\src\Engin\startGame;
+use function BrainGames\Engin\startGame;
 
 function brainStart()
 {
@@ -13,8 +13,8 @@ function brainStart()
         $numberOne = rand(1, 99);
         $numberTwo = rand(1, 99);
         $parity = gcd($numberOne, $numberTwo);
-        $Question = "{$numberOne} {$numberTwo}";
-        $arrayQuestion[$Question] = (string) $parity;
+        $question = "{$numberOne} {$numberTwo}";
+        $arrayQuestion[$question] = (string) $parity;
     }
     startGame($startQuestion, $arrayQuestion);
 }

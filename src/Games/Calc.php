@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\src\games\brainCalc;
+namespace BrainGames\Calc;
 
-use function BrainGames\src\Engin\startGame;
+use function BrainGames\Engin\startGame;
 
 function brainStart()
 {
@@ -28,8 +28,8 @@ function brainStart()
                 $mathematicalOperations = '*';
                 break;
         }
-        $Question = "{$numberOne} {$mathematicalOperations} {$numberTwo}";
-        $arrayQuestion[$Question] = (string) $parity;
+        $question = "{$numberOne} {$mathematicalOperations} {$numberTwo}";
+        $arrayQuestion[$question] = (string) $parity;
     }
     startGame($startQuestion, $arrayQuestion);
 }

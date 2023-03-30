@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\src\games\brainPrime;
+namespace BrainGames\Prime;
 
-use function BrainGames\src\Engin\startGame;
+use function BrainGames\Engin\startGame;
 
 function brainStart()
 {
@@ -16,6 +16,7 @@ function brainStart()
                 $number += 1;
             }
         }
+        $parity = ''; 
         isPrime($number) ? $parity = 'yes' : $parity = 'no';
         $arrayQuestion[$number] = $parity;
     }

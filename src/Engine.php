@@ -1,10 +1,9 @@
 <?php
 
-namespace BrainGames\src\Engin;
+namespace BrainGames\Engin;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Cli\greetTheUser;
 
 function startGame(string $startQuestion, array $arrayQuestion)
 {
