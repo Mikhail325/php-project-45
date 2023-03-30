@@ -5,7 +5,7 @@ namespace BrainGames\Prime;
 function brainStart(int $numberOfQuestions)
 {
     $startQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $save[0] = $startQuestion;
+    $save = [$startQuestion];
 
     for ($i = 1; $i <= $numberOfQuestions; $i += 2) {
         $number = rand(1, 99);
@@ -14,7 +14,7 @@ function brainStart(int $numberOfQuestions)
         isPrime($number) ? $parity = 'yes' : $parity = 'no';
 
         $save[$i] = $number;
-        $save[$i + 1] = (string) $parity;
+        $save[$i + 1] = $parity;
     }
     return $save;
 }

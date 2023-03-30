@@ -5,7 +5,7 @@ namespace BrainGames\Calc;
 function brainStart(int $numberOfQuestions)
 {
     $startQuestion = 'What is the result of the expression?';
-    $save[0] = $startQuestion;
+    $save = [$startQuestion];
     $mathematicalOperations = '';
     $parity = 0;
     $mathematicalOperations = ['+' ,'-', '*'];

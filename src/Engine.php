@@ -12,7 +12,7 @@ function startGame(string $startGames,)
     line("Hello, %s!", $name);
     $numberOfQuestions = 3;
     $theLastElementOfTheArray = $numberOfQuestions * 2;
-    $save = call_user_func($startGames, $theLastElementOfTheArray);
+    $save = $startGames($theLastElementOfTheArray);
     line('%s', $save[0]);
 
     for ($i = 1, $lengh = count($save); $i < $lengh; $i += 2) {

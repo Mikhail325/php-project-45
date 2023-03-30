@@ -5,7 +5,7 @@ namespace BrainGames\Progression;
 function brainStart(int $numberOfQuestions)
 {
     $startQuestion = 'What number is missing in the progression?';
-    $save[0] = $startQuestion;
+    $save = [$startQuestion];
 
     for ($i = 1; $i <= $numberOfQuestions; $i += 2) {
         $arrayProgression = [];
