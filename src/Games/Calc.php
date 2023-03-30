@@ -2,34 +2,35 @@
 
 namespace BrainGames\Calc;
 
-use function BrainGames\Engin\startGame;
-
-function brainStart()
+function brainStart(int $numberOfQuestions)
 {
     $startQuestion = 'What is the result of the expression?';
-    $numberOfQuestions = 3;
-    $arrayQuestion = [];
+    $save[0] = $startQuestion;
     $mathematicalOperations = '';
     $parity = 0;
-    for ($i = 0; $i < $numberOfQuestions; $i++) {
+    $mathematicalOperations = ['+' ,'-', '*'];
+
+    for ($i = 1; $i <= $numberOfQuestions; $i += 2) {
         $numberOne = rand(1, 99);
         $numberTwo = rand(1, 99);
-        switch (rand(0, 2)) {
-            case 0:
-                $parity = $numberOne + $numberTwo;
-                $mathematicalOperations = '+';
-                break;
-            case 1:
-                $parity = $numberOne - $numberTwo;
-                $mathematicalOperations = '-';
-                break;
-            case 2:
-                $parity = $numberOne * $numberTwo;
-                $mathematicalOperations = '*';
-                break;
-        }
-        $question = "{$numberOne} {$mathematicalOperations} {$numberTwo}";
-        $arrayQuestion[$question] = (string) $parity;
+        $sign = rand(0, 2);
+
+        $parity = parity($sign, $numberOne, $numberTwo);
+        $question = "{$numberOne} {$mathematicalOperations[$sign]} {$numberTwo}";
+        $save[$i] = $question;
+        $save[$i + 1] = (string) $parity;
     }
-    startGame($startQuestion, $arrayQuestion);
+    return $save;
+}
+
+function parity(int $numberSing, int $numberOne, int $numberTwo)
+{
+    switch ($numberSing) {
+        case 0:
+            return $parity = $numberOne + $numberTwo;
+        case 1:
+            return $parity = $numberOne - $numberTwo;
+        case 2:
+            return $parity = $numberOne * $numberTwo;
+    } 
 }

@@ -5,17 +5,21 @@ namespace BrainGames\Engin;
 use function cli\line;
 use function cli\prompt;
 
-function startGame(string $startQuestion, array $arrayQuestion)
+function startGame(string $startGames,)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line('%s', $startQuestion);
-    foreach ($arrayQuestion as $question => $rightAnswer) {
-        line("Question: %s", $question);
+    $numberOfQuestions = 3;
+    $theLastElementOfTheArray = $numberOfQuestions * 2;
+    $save = call_user_func($startGames, $theLastElementOfTheArray);
+    line('%s', $save[0]);
+
+    for ($i = 1, $lengh = count($save); $i < $lengh; $i += 2) {
+        line("Question: %s", $save[$i] );
         $answer = prompt('Your answer');
-        if ($rightAnswer !== $answer) {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $rightAnswer);
+        if ($save[$i + 1] !== $answer) {
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $save[$i + 1]);
             line("Let's try again, %s!", $name);
             return;
         }
