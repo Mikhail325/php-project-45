@@ -32,5 +32,5 @@ function parity(int $numberSing, int $numberOne, int $numberTwo)
             return $parity = $numberOne - $numberTwo;
         case 2:
             return $parity = $numberOne * $numberTwo;
-    } 
+    }
 }

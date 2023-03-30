@@ -16,7 +16,7 @@ function startGame(string $startGames,)
     line('%s', $save[0]);
 
     for ($i = 1, $lengh = count($save); $i < $lengh; $i += 2) {
-        line("Question: %s", $save[$i] );
+        line("Question: %s", $save[$i]);
         $answer = prompt('Your answer');
         if ($save[$i + 1] !== $answer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $save[$i + 1]);

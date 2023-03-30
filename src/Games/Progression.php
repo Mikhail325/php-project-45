@@ -17,7 +17,7 @@ function brainStart(int $numberOfQuestions)
             $arrayProgression[] = $startNumber;
             $startNumber += $stepProgression;
         }
-        
+
         $indexParity = rand(0, $lengthProgression - 1);
         $parity = $arrayProgression[$indexParity];
         $arrayProgression[$indexParity] = '..';
