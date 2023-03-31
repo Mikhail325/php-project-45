@@ -2,29 +2,43 @@
 
 namespace BrainGames\Progression;
 
-function brainStart(int $numberOfQuestions)
-{
-    $startQuestion = 'What number is missing in the progression?';
-    $save = [$startQuestion];
+use function BrainGames\Engin\startGame;
+use function BrainGames\Engin\game;
 
-    for ($i = 1; $i <= $numberOfQuestions; $i += 2) {
+function brainStart()
+{
+    $numberOfQuestions = startGame();
+
+    $startQuestion = 'What number is missing in the progression?';
+    $qustions = [];
+    $answers = [];
+
+    for ($i = 0; $i < $numberOfQuestions; $i += 1) {
         $arrayProgression = [];
         $startNumber = rand(1, 99);
         $lengthProgression = rand(5, 15);
         $stepProgression = rand(1, 10);
 
-        for ($j = 0; $j < $lengthProgression; $j++) {
-            $arrayProgression[] = $startNumber;
-            $startNumber += $stepProgression;
-        }
+        $arrayProgression = progression($startNumber, $stepProgression, $lengthProgression);
 
         $indexParity = rand(0, $lengthProgression - 1);
         $parity = $arrayProgression[$indexParity];
         $arrayProgression[$indexParity] = '..';
         $arrayProgression = implode(' ', $arrayProgression);
 
-        $save[$i] = $arrayProgression;
-        $save[$i + 1] = (string) $parity;
+        $qustions[] = $arrayProgression;
+        $answers[] = (string) $parity;
     }
-    return $save;
+
+    game($startQuestion, $qustions, $answers);
+}
+
+function progression(int $startNumber, int $stepProgression, int $lengthProgression)
+{
+    $arrayProgression = [];
+    for ($j = 0; $j < $lengthProgression; $j++) {
+        $arrayProgression[] = $startNumber;
+        $startNumber += $stepProgression;
+    }
+    return $arrayProgression;
 }

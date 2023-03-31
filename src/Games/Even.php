@@ -2,19 +2,26 @@
 
 namespace BrainGames\Even;
 
-function brainStart(int $numberOfQuestions)
+use function BrainGames\Engin\startGame;
+use function BrainGames\Engin\game;
+
+function brainStart()
 {
+    $numberOfQuestions = startGame();
+
     $startQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $save = [$startQuestion];
+    $qustions = [];
+    $answers = [];
 
-    for ($i = 1; $i <= $numberOfQuestions; $i += 2) {
+    for ($i = 0; $i < $numberOfQuestions; $i += 1) {
         $number = rand(1, 99);
-        isEvent($number) ? $parity = 'yes' : $parity = 'no';
+        $parity = isEvent($number) ? 'yes' : 'no';
 
-        $save[$i] = $number;
-        $save[$i + 1] = $parity;
+        $qustions[] = $number;
+        $answers[] = (string) $parity;
     }
-    return $save;
+
+    game($startQuestion, $qustions, $answers);
 }
 
 function isEvent(int $number)
