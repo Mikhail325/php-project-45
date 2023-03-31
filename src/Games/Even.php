@@ -18,7 +18,7 @@ function brainStart()
         $parity = isEvent($number) ? 'yes' : 'no';
 
         $qustions[] = $number;
-        $answers[] = (string) $parity;
+        $answers[] = $parity;
     }
 
     game($startQuestion, $qustions, $answers);

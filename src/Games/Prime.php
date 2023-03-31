@@ -15,11 +15,10 @@ function brainStart()
 
     for ($i = 0; $i < $numberOfQuestions; $i += 1) {
         $number = rand(1, 99);
-
         $parity = isPrime($number) ? 'yes' : 'no';
 
         $qustions[] = $number;
-        $answers[] = (string) $parity;
+        $answers[] = $parity;
     }
 
     game($startQuestion, $qustions, $answers);
