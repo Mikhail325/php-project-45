@@ -2,18 +2,15 @@
 
 namespace BrainGames\Progression;
 
-use function BrainGames\Engin\startGame;
 use function BrainGames\Engin\game;
 
 function brainStart()
 {
-    $numberOfQuestions = startGame();
-
-    $startQuestion = 'What number is missing in the progression?';
+    $gameRule = 'What number is missing in the progression?';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < $numberOfQuestions; $i += 1) {
+    for ($i = 0; $i < NUMBEROFQUSTIONS; $i += 1) {
         $arrayProgression = [];
         $startNumber = rand(1, 99);
         $lengthProgression = rand(5, 15);
@@ -30,7 +27,8 @@ function brainStart()
         $answers[] = (string) $parity;
     }
 
-    game($startQuestion, $qustions, $answers);
+    $gameData = ['qustions' => $qustions, 'answers' => $answers];
+    game($gameRule, $gameData);
 }
 
 function progression(int $startNumber, int $stepProgression, int $lengthProgression)

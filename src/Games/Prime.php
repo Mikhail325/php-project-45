@@ -2,18 +2,15 @@
 
 namespace BrainGames\Prime;
 
-use function BrainGames\Engin\startGame;
 use function BrainGames\Engin\game;
 
 function brainStart()
 {
-    $numberOfQuestions = startGame();
-
-    $startQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < $numberOfQuestions; $i += 1) {
+    for ($i = 0; $i < NUMBEROFQUSTIONS; $i += 1) {
         $number = rand(1, 99);
         $parity = isPrime($number) ? 'yes' : 'no';
 
@@ -21,7 +18,8 @@ function brainStart()
         $answers[] = $parity;
     }
 
-    game($startQuestion, $qustions, $answers);
+    $gameData = ['qustions' => $qustions, 'answers' => $answers];
+    game($gameRule, $gameData);
 }
 
 function isPrime(int $number)
