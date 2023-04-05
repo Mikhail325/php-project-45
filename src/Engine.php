@@ -14,11 +14,11 @@ function game(string $gameRule, array $gameData)
     line("Hello, %s!", $name);
     line('%s', $gameRule);
 
-    for ($i = 0, $lengh = count($gameData['qustions']); $i < $lengh; $i += 1) {
+    for ($i = 0; $i < NUMBEROFQUSTIONS; $i += 1) {
         line("Question: %s", $gameData['qustions'][$i]);
         $answer = prompt('Your answer');
         if ($gameData['answers'][$i] !== $answer) {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $gameData[1][$i]);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $gameData['answers'][$i]);
             line("Let's try again, %s!", $name);
             return;
         }
