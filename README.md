@@ -2,6 +2,9 @@
 [![Actions Status](https://github.com/Mikhail325/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/Mikhail325/php-project-45/actions)
 <a href="https://codeclimate.com/github/Mikhail325/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/de20e2d18547dd216550/maintainability" /></a>
 
+## Игры разума
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+
 ### Пример установки зависимостей make install, запуска игры make brain-even с победой и поражением игрока
 [![asciicast](https://asciinema.org/a/rBNWIoerMKUdwsyt603evy8wE.svg)](https://asciinema.org/a/rBNWIoerMKUdwsyt603evy8wE)
 ### Пример запуска игры make brain-calc с победой и поражением игрока
