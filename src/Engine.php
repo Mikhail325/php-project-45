@@ -5,7 +5,7 @@ namespace BrainGames\Engin;
 use function cli\line;
 use function cli\prompt;
 
-define('NUMBEROFQUSTIONS', 3);
+const LEVELS = 3;
 
 function game(string $gameRule, array $gameData)
 {
@@ -14,7 +14,7 @@ function game(string $gameRule, array $gameData)
     line("Hello, %s!", $name);
     line('%s', $gameRule);
 
-    for ($i = 0; $i < NUMBEROFQUSTIONS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         line("Question: %s", $gameData['qustions'][$i]);
         $answer = prompt('Your answer');
         if ($gameData['answers'][$i] !== $answer) {

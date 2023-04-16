@@ -4,20 +4,20 @@ namespace BrainGames\Calc;
 
 use function BrainGames\Engin\game;
 
-function brainStart()
+function brainGameStart()
 {
     $gameRule = 'What is the result of the expression?';
     $qustions = [];
     $answers = [];
     $mathematicalOperations = ['+' ,'-', '*'];
 
-    for ($i = 0; $i < NUMBEROFQUSTIONS; $i += 1) {
+    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
         $numberOne = rand(1, 99);
         $numberTwo = rand(1, 99);
         $sign = array_rand($mathematicalOperations);
 
         $question = "{$numberOne} {$mathematicalOperations[$sign]} {$numberTwo}";
-        $parity = parity($sign, $numberOne, $numberTwo);
+        $parity = calculate($sign, $numberOne, $numberTwo);
 
         $qustions[] = $question;
         $answers[] = (string) $parity;
@@ -27,7 +27,7 @@ function brainStart()
     game($gameRule, $gameData);
 }
 
-function parity(int $numberSing, int $numberOne, int $numberTwo)
+function calculate(int $numberSing, int $numberOne, int $numberTwo)
 {
     switch ($numberSing) {
         case 0:

@@ -1,7 +1,6 @@
-### Hexlet tests and linter status:
+### Hexlet tests, linter status and Maintainability:
 [![Actions Status](https://github.com/Mikhail325/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/Mikhail325/php-project-45/actions)
 <a href="https://codeclimate.com/github/Mikhail325/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/de20e2d18547dd216550/maintainability" /></a>
-<a href="https://codeclimate.com/github/Mikhail325/php-project-45/test_coverage"><img src="https://api.codeclimate.com/v1/badges/de20e2d18547dd216550/test_coverage" /></a>
 
 ## Пример установки зависимостей make install, запуска игры make brain-even с победой и поражением игрока
 [![asciicast](https://asciinema.org/a/JYMovo1BJIXMEl7r6n29QTmgj.svg)](https://asciinema.org/a/JYMovo1BJIXMEl7r6n29QTmgj)
