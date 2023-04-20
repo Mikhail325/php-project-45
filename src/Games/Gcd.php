@@ -4,13 +4,15 @@ namespace BrainGames\Gcd;
 
 use function BrainGames\Engin\game;
 
+use const BrainGames\Engin\LEVELS;
+
 function brainGameStart()
 {
     $gameRule = 'Find the greatest common divisor of given numbers.';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         $numberOne = rand(1, 99);
         $numberTwo = rand(1, 99);
 

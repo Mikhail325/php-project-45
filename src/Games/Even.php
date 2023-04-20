@@ -4,13 +4,15 @@ namespace BrainGames\Even;
 
 use function BrainGames\Engin\game;
 
+use const BrainGames\Engin\LEVELS;
+
 function brainGameStart()
 {
     $gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         $number = rand(1, 99);
         $parity = isEven($number) ? 'yes' : 'no';
 

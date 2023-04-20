@@ -4,13 +4,15 @@ namespace BrainGames\Prime;
 
 use function BrainGames\Engin\game;
 
+use const BrainGames\Engin\LEVELS;
+
 function brainGameStart()
 {
     $gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         $number = rand(1, 99);
         $parity = isPrime($number) ? 'yes' : 'no';
 

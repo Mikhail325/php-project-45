@@ -4,6 +4,8 @@ namespace BrainGames\Calc;
 
 use function BrainGames\Engin\game;
 
+use const BrainGames\Engin\LEVELS;
+
 function brainGameStart()
 {
     $gameRule = 'What is the result of the expression?';
@@ -11,7 +13,7 @@ function brainGameStart()
     $answers = [];
     $mathematicalOperations = ['+' ,'-', '*'];
 
-    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         $numberOne = rand(1, 99);
         $numberTwo = rand(1, 99);
         $sign = array_rand($mathematicalOperations);

@@ -4,13 +4,15 @@ namespace BrainGames\Progression;
 
 use function BrainGames\Engin\game;
 
+use const BrainGames\Engin\LEVELS;
+
 function brainGameStart()
 {
     $gameRule = 'What number is missing in the progression?';
     $qustions = [];
     $answers = [];
 
-    for ($i = 0; $i < \BrainGames\Engin\LEVELS; $i += 1) {
+    for ($i = 0; $i < LEVELS; $i += 1) {
         $arrayProgression = [];
         $startNumber = rand(1, 99);
         $lengthProgression = rand(5, 15);
